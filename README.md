@@ -1,5 +1,12 @@
 # SupaVideoConverter
 
+🌐 **Other Languages:**
+- [Tiếng Việt](README-vi.md)
+- [Bahasa Indonesia](README-id.md)
+- [한국어](README-kr.md)
+
+---
+
 A cross-platform desktop application for video format conversion built with Electron, React, and Ant Design, built by Supa
 
 ## Features
@@ -11,6 +18,24 @@ A cross-platform desktop application for video format conversion built with Elec
 - **Progress Tracking**: Real-time conversion progress with estimated time remaining
 - **Drag & Drop**: Easy file selection with drag and drop support
 - **Cross-platform**: Works on Windows and macOS
+
+## Screenshots
+
+### Welcome Screen
+![Welcome Screen](screenshots/screenshot-01-welcome.png)
+*The welcome screen that greets users when launching the application*
+
+### Main Interface
+![Main Screen](screenshots/screenshot-02-main-screen.png)
+*The main conversion interface showing file selection, progress tracking, and conversion controls*
+
+### Language Selection
+![Language Select](screenshots/screenshot-03-language-select.png)
+*Language selection options for internationalization support*
+
+### Video Settings
+![Video Settings](screenshots/screenshot-04-video-settings.png)
+*Detailed video conversion settings including quality, resolution, and output options*
 
 ## Tech Stack
 
