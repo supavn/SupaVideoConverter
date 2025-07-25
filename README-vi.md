@@ -7,191 +7,84 @@
 
 ---
 
-Ứng dụng desktop đa nền tảng để chuyển đổi định dạng video được xây dựng với Electron, React và Ant Design, phát triển bởi Supa
+Một ứng dụng chuyển đổi video đơn giản và mạnh mẽ giúp bạn chuyển đổi video sang định dạng MP4 chỉ với vài cú nhấp chuột. Được phát triển bởi Supa.
 
-## Tính năng
+## SupaVideoConverter là gì?
 
-- **Hỗ trợ đa định dạng**: Chuyển đổi MP4, AVI, MOV, MKV, WMV, FLV, WEBM, M4V, 3GP, OGV sang MP4
-- **Tùy chọn chất lượng**: Nhiều cài đặt chất lượng sẵn có (Thấp, Trung bình, Cao, Lossless) và tùy chỉnh bitrate
-- **Thay đổi độ phân giải**: Hỗ trợ 720p, 1080p và độ phân giải tùy chỉnh
-- **Xử lý hàng loạt**: Chuyển đổi nhiều file cùng lúc
-- **Theo dõi tiến trình**: Hiển thị tiến trình chuyển đổi thời gian thực với thời gian còn lại dự kiến
-- **Kéo & Thả**: Dễ dàng chọn file với tính năng kéo thả
-- **Đa nền tảng**: Hoạt động trên Windows và macOS
+SupaVideoConverter là một ứng dụng desktop thân thiện với người dùng giúp bạn chuyển đổi file video từ nhiều định dạng khác nhau (MP4, AVI, MOV, MKV, WMV, FLV, WEBM, M4V, 3GP, OGV) thành video MP4 chất lượng cao. Hoàn hảo để làm cho video của bạn tương thích trên tất cả thiết bị và nền tảng.
 
-## Ảnh chụp màn hình
+## Tính năng chính
 
-### Màn hình chào mừng
+- **Dễ sử dụng**: Giao diện kéo thả đơn giản
+- **Hỗ trợ đa định dạng**: Chuyển đổi từ hơn 10 định dạng video sang MP4
+- **Kiểm soát chất lượng**: Chọn từ Thấp, Trung bình, Cao, Lossless hoặc tùy chỉnh
+- **Tùy chọn độ phân giải**: Giữ kích thước gốc hoặc chuyển sang 720p, 1080p, hoặc tùy chỉnh
+- **Xử lý hàng loạt**: Chuyển đổi nhiều video cùng lúc
+- **Theo dõi tiến trình**: Xem tiến trình chuyển đổi thời gian thực
+- **Đa ngôn ngữ**: Có sẵn bằng tiếng Anh, Việt Nam, Indonesia và Hàn Quốc
+
+## Cách sử dụng SupaVideoConverter
+
+Làm theo hướng dẫn từng bước đơn giản này để chuyển đổi video của bạn:
+
+### Bước 1: Khởi chạy lần đầu & Chọn ngôn ngữ
 ![Welcome Screen](screenshots/screenshot-01-welcome.png)
-*Màn hình chào mừng hiển thị khi khởi động ứng dụng*
+**Chào mừng đến với SupaVideoConverter!** Khi bạn mở ứng dụng lần đầu, bạn sẽ thấy màn hình chào mừng này.
 
-### Giao diện chính
+![Language Selection](screenshots/screenshot-03-language-select.png)
+**Chọn ngôn ngữ của bạn:** Nhấp vào bộ chọn ngôn ngữ để chọn ngôn ngữ ưa thích từ tiếng Anh, Việt Nam, Indonesia hoặc Hàn Quốc.
+
+### Bước 2: Chọn video của bạn
 ![Main Screen](screenshots/screenshot-02-main-screen.png)
-*Giao diện chuyển đổi chính hiển thị chọn file, theo dõi tiến trình và điều khiển chuyển đổi*
+**Thêm video:** Trên màn hình chính, bạn có thể:
+- **Kéo thả** file video trực tiếp vào ứng dụng
+- **Nhấp "Thêm file"** để duyệt và chọn video từ máy tính
+- **Thêm nhiều video** để chuyển đổi tất cả cùng lúc
 
-### Chọn ngôn ngữ
-![Language Select](screenshots/screenshot-03-language-select.png)
-*Tùy chọn chọn ngôn ngữ cho hỗ trợ đa ngôn ngữ*
-
-### Cài đặt video
+### Bước 3: Cấu hình cài đặt video
 ![Video Settings](screenshots/screenshot-04-video-settings.png)
-*Cài đặt chi tiết chuyển đổi video bao gồm chất lượng, độ phân giải và tùy chọn đầu ra*
+**Tùy chỉnh đầu ra:** Nhấp vào cài đặt để cấu hình:
 
-## Công nghệ sử dụng
+**Tùy chọn chất lượng:**
+- **Thấp (1 Mbps)** - Kích thước file nhỏ hơn, chuyển đổi nhanh hơn
+- **Trung bình (3 Mbps)** - Cân bằng chất lượng và kích thước (được khuyên dùng)
+- **Cao (8 Mbps)** - Chất lượng tốt hơn, kích thước file lớn hơn
+- **Lossless (50 Mbps)** - Chất lượng tối đa, kích thước file lớn nhất
+- **Tùy chỉnh** - Đặt bitrate của riêng bạn (1-50 Mbps)
 
-- **Electron** ^28.0.0 - Framework ứng dụng desktop
-- **React** ^18.2.0 - Framework UI frontend
-- **Ant Design** ^5.12.0 - Thư viện component UI
-- **Vite** ^5.0.0 - Công cụ build
-- **FFmpeg** - Engine xử lý video
-- **fluent-ffmpeg** ^2.1.2 - Wrapper Node.js cho FFmpeg
+**Tùy chọn độ phân giải:**
+- **Giữ nguyên** - Duy trì độ phân giải video gốc
+- **720p (HD)** - Độ phân giải cao tiêu chuẩn (1280x720)
+- **1080p (Full HD)** - Độ phân giải cao đầy đủ (1920x1080)
+- **Tùy chỉnh** - Đặt chiều rộng và chiều cao của riêng bạn
 
-## Cài đặt
+**Thư mục đầu ra:** Chọn nơi bạn muốn lưu video đã chuyển đổi.
 
-1. Clone repository:
-```bash
-git clone <repository-url>
-cd video-converter-app
-```
+### Bước 4: Bắt đầu chuyển đổi
+Sau khi bạn đã chọn video và cấu hình cài đặt:
+1. **Nhấp "Bắt đầu chuyển đổi"** để bắt đầu quá trình
+2. **Xem tiến trình** - Bạn sẽ thấy thanh tiến trình và thời gian còn lại dự kiến
+3. **Chờ hoàn thành** - Ứng dụng sẽ xử lý tất cả video của bạn tự động
 
-2. Cài đặt dependencies:
-```bash
-npm install
-```
-
-## Phát triển
-
-Để chạy ứng dụng ở chế độ phát triển:
-
-```bash
-npm run electron:dev
-```
-
-Điều này sẽ:
-1. Khởi động Vite dev server trên http://localhost:5173
-2. Tự động khởi chạy ứng dụng Electron
-3. Kích hoạt hot module replacement cho React components
-
-## Build
-
-Để build ứng dụng React:
-```bash
-npm run build
-```
-
-Để đóng gói ứng dụng Electron để phân phối:
-```bash
-npm run electron:dist
-```
-
-Điều này sẽ tạo ra các file phân phối trong thư mục `dist`:
-- **Windows**: File cài đặt `.exe`
-- **macOS**: Gói `.dmg`
-
-## Scripts
-
-- `npm run dev` - Chỉ khởi động Vite dev server
-- `npm run build` - Build ứng dụng React cho production
-- `npm run preview` - Xem trước production build
-- `npm run electron` - Chạy Electron với các file đã build
-- `npm run electron:dev` - Chạy ở chế độ phát triển
-- `npm run electron:pack` - Đóng gói mà không build
-- `npm run electron:dist` - Build và đóng gói để phân phối
-
-## Cấu trúc dự án
-
-```
-video-converter-app/
-├── src/                           # Mã nguồn ứng dụng React
-│   ├── components/                # React components
-│   │   ├── FileInput/            # Component chọn file
-│   │   ├── ConversionSettings/   # Cấu hình cài đặt
-│   │   ├── ProgressTracking/     # Hiển thị tiến trình
-│   │   └── OutputManagement/     # Kết quả và đầu ra
-│   ├── hooks/                    # Custom React hooks
-│   ├── utils/                    # Utility functions
-│   ├── styles/                   # Global styles
-│   └── App.jsx                   # Ứng dụng chính
-├── electron/                     # Electron main process
-│   ├── main.js                   # Main process entry
-│   ├── preload.js               # Preload script
-│   └── services/                # Backend services
-│       ├── VideoProcessor.js    # FFmpeg wrapper
-│       ├── FileManager.js       # File operations
-│       └── SettingsManager.js   # Settings persistence
-├── build/                       # Cấu hình build
-├── resources/                   # Static resources
-└── package.json                 # Cấu hình dự án
-```
-
-## Cách sử dụng
-
-1. **Chọn file**: Kéo thả file video hoặc sử dụng trình duyệt file
-2. **Cấu hình cài đặt**: Chọn độ phân giải đầu ra, chất lượng và thư mục đích
-3. **Bắt đầu chuyển đổi**: Khởi động quá trình chuyển đổi
-4. **Theo dõi tiến trình**: Giám sát tiến trình thời gian thực cho từng file
-5. **Truy cập kết quả**: Mở thư mục đầu ra hoặc phát file đã chuyển đổi
+### Bước 5: Truy cập video đã chuyển đổi
+Sau khi chuyển đổi hoàn tất, bạn có thể:
+- **Mở thư mục đầu ra** - Nhấp để xem tất cả video đã chuyển đổi
+- **Phát video** - Nhấp vào bất kỳ video đã chuyển đổi nào để phát ngay lập tức
+- **Chuyển đổi thêm** - Thêm video mới và lặp lại quá trình
 
 ## Định dạng được hỗ trợ
 
-**Định dạng đầu vào:**
-- MP4, AVI, MOV, MKV, WMV, FLV, WEBM, M4V, 3GP, OGV
+**Video nào bạn có thể chuyển đổi?**
+- Đầu vào: MP4, AVI, MOV, MKV, WMV, FLV, WEBM, M4V, 3GP, OGV
+- Đầu ra: MP4 (tương thích toàn cầu)
 
-**Định dạng đầu ra:**
-- MP4 (H.264/AAC)
+## Mẹo để có kết quả tốt nhất
 
-## Cài đặt chất lượng
+- **Cho mạng xã hội**: Sử dụng chất lượng Trung bình (3 Mbps) và độ phân giải 1080p
+- **Cho lưu trữ**: Sử dụng chất lượng Cao hoặc Lossless với độ phân giải gốc
+- **Cho chia sẻ**: Sử dụng chất lượng Thấp đến Trung bình để giảm kích thước file
+- **Cho thiết bị di động**: Sử dụng độ phân giải 720p để xử lý nhanh hơn
 
-- **Thấp**: 1 Mbps - File nhỏ hơn, chất lượng thấp hơn
-- **Trung bình**: 3 Mbps - Cân bằng chất lượng và kích thước
-- **Cao**: 8 Mbps - Chất lượng cao hơn, file lớn hơn
-- **Lossless**: 50 Mbps - Chất lượng tối đa
-- **Tùy chỉnh**: Bitrate do người dùng định nghĩa (1-50 Mbps)
+## Cần trợ giúp?
 
-## Tùy chọn độ phân giải
-
-- **Giữ nguyên**: Duy trì độ phân giải gốc
-- **720p**: 1280x720 (HD)
-- **1080p**: 1920x1080 (Full HD)
-- **Tùy chỉnh**: Kích thước do người dùng định nghĩa
-
-## Yêu cầu hệ thống
-
-- **Node.js** 16+ (cho phát triển)
-- **macOS** 10.15+ hoặc **Windows** 10+
-- Ít nhất 4GB RAM để xử lý file video lớn
-- Dung lượng đĩa khả dụng cho file đầu ra
-
-## Khắc phục sự cố
-
-### Vấn đề thường gặp
-
-1. **Không tìm thấy FFmpeg**: Ứng dụng bao gồm FFmpeg binaries, nhưng nếu gặp vấn đề, hãy đảm bảo ứng dụng có quyền thích hợp.
-
-2. **Xử lý file lớn**: Đối với file trên 4GB, đảm bảo bạn có đủ dung lượng đĩa và RAM.
-
-3. **Chuyển đổi thất bại**: Kiểm tra file đầu vào không bị hỏng và thư mục đầu ra có quyền ghi.
-
-### Vấn đề phát triển
-
-1. **Electron không khởi động**: Đảm bảo tất cả dependencies được cài đặt với `npm install`
-
-2. **Hot reload không hoạt động**: Kiểm tra Vite dev server đang chạy trên port 5173
-
-3. **Build thất bại**: Xóa node_modules và cài đặt lại dependencies
-
-## Giấy phép
-
-MIT License - xem file LICENSE để biết chi tiết
-
-## Đóng góp
-
-1. Fork repository
-2. Tạo feature branch
-3. Thực hiện thay đổi
-4. Test kỹ lưỡng
-5. Gửi pull request
-
-## Hỗ trợ
-
-Đối với các vấn đề và yêu cầu tính năng, vui lòng tạo issue trong repository.
+Nếu bạn gặp bất kỳ vấn đề nào hoặc có câu hỏi về việc sử dụng SupaVideoConverter, vui lòng tạo issue trong repository của chúng tôi và chúng tôi sẽ giúp bạn!

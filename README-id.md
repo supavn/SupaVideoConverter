@@ -7,191 +7,84 @@
 
 ---
 
-Aplikasi desktop lintas platform untuk konversi format video yang dibangun dengan Electron, React, dan Ant Design, dikembangkan oleh Supa
+Aplikasi konverter video yang sederhana dan powerful yang mengubah video Anda ke format MP4 hanya dengan beberapa klik. Dikembangkan oleh Supa.
 
-## Fitur
+## Apa itu SupaVideoConverter?
 
-- **Dukungan Multi-format**: Konversi MP4, AVI, MOV, MKV, WMV, FLV, WEBM, M4V, 3GP, OGV ke MP4
-- **Opsi Kualitas**: Preset kualitas beragam (Rendah, Sedang, Tinggi, Lossless) dan pengaturan bitrate kustom
-- **Penskalaan Resolusi**: Dukungan untuk 720p, 1080p, dan resolusi kustom
-- **Pemrosesan Batch**: Konversi beberapa file sekaligus
-- **Pelacakan Progress**: Progress konversi real-time dengan estimasi waktu tersisa
-- **Drag & Drop**: Pemilihan file mudah dengan dukungan drag and drop
-- **Lintas Platform**: Berfungsi di Windows dan macOS
+SupaVideoConverter adalah aplikasi desktop yang user-friendly yang membantu Anda mengkonversi file video dari berbagai format (MP4, AVI, MOV, MKV, WMV, FLV, WEBM, M4V, 3GP, OGV) menjadi video MP4 berkualitas tinggi. Sempurna untuk membuat video Anda kompatibel di semua perangkat dan platform.
 
-## Screenshot
+## Fitur Utama
 
-### Layar Selamat Datang
+- **Mudah Digunakan**: Interface drag-and-drop yang sederhana
+- **Dukungan Multi-format**: Konversi dari 10+ format video ke MP4
+- **Kontrol Kualitas**: Pilih dari Rendah, Sedang, Tinggi, Lossless, atau kualitas custom
+- **Opsi Resolusi**: Pertahankan ukuran asli atau konversi ke 720p, 1080p, atau resolusi custom
+- **Pemrosesan Batch**: Konversi beberapa video sekaligus
+- **Pelacakan Progress**: Lihat progress konversi real-time
+- **Multi-bahasa**: Tersedia dalam bahasa Inggris, Vietnam, Indonesia, dan Korea
+
+## Cara Menggunakan SupaVideoConverter
+
+Ikuti panduan langkah demi langkah sederhana ini untuk mengkonversi video Anda:
+
+### Langkah 1: Peluncuran Pertama & Pemilihan Bahasa
 ![Welcome Screen](screenshots/screenshot-01-welcome.png)
-*Layar selamat datang yang menyambut pengguna saat meluncurkan aplikasi*
+**Selamat datang di SupaVideoConverter!** Saat Anda pertama kali membuka aplikasi, Anda akan melihat layar selamat datang ini.
 
-### Interface Utama
+![Language Selection](screenshots/screenshot-03-language-select.png)
+**Pilih Bahasa Anda:** Klik pada pemilih bahasa untuk memilih bahasa yang Anda sukai dari bahasa Inggris, Vietnam, Indonesia, atau Korea.
+
+### Langkah 2: Pilih Video Anda
 ![Main Screen](screenshots/screenshot-02-main-screen.png)
-*Interface konversi utama menampilkan pemilihan file, pelacakan progress, dan kontrol konversi*
+**Tambah Video:** Di layar utama, Anda dapat:
+- **Drag and drop** file video langsung ke aplikasi
+- **Klik "Tambah File"** untuk browse dan pilih video dari komputer Anda
+- **Tambah beberapa video** untuk mengkonversi semuanya sekaligus
 
-### Pemilihan Bahasa
-![Language Select](screenshots/screenshot-03-language-select.png)
-*Opsi pemilihan bahasa untuk dukungan internasionalisasi*
-
-### Pengaturan Video
+### Langkah 3: Konfigurasi Pengaturan Video
 ![Video Settings](screenshots/screenshot-04-video-settings.png)
-*Pengaturan konversi video detail termasuk kualitas, resolusi, dan opsi output*
+**Sesuaikan Output Anda:** Klik pada pengaturan untuk mengkonfigurasi:
 
-## Tech Stack
+**Opsi Kualitas:**
+- **Rendah (1 Mbps)** - Ukuran file lebih kecil, konversi lebih cepat
+- **Sedang (3 Mbps)** - Kualitas dan ukuran seimbang (direkomendasikan)
+- **Tinggi (8 Mbps)** - Kualitas lebih baik, ukuran file lebih besar
+- **Lossless (50 Mbps)** - Kualitas maksimum, ukuran file terbesar
+- **Custom** - Atur bitrate Anda sendiri (1-50 Mbps)
 
-- **Electron** ^28.0.0 - Framework aplikasi desktop
-- **React** ^18.2.0 - Framework UI frontend
-- **Ant Design** ^5.12.0 - Pustaka komponen UI
-- **Vite** ^5.0.0 - Tool build
-- **FFmpeg** - Engine pemrosesan video
-- **fluent-ffmpeg** ^2.1.2 - Wrapper Node.js untuk FFmpeg
+**Opsi Resolusi:**
+- **Pertahankan Asli** - Pertahankan resolusi video sumber
+- **720p (HD)** - High definition standar (1280x720)
+- **1080p (Full HD)** - Full high definition (1920x1080)
+- **Custom** - Atur lebar dan tinggi Anda sendiri
 
-## Instalasi
+**Folder Output:** Pilih di mana Anda ingin video yang telah dikonversi disimpan.
 
-1. Clone repository:
-```bash
-git clone <repository-url>
-cd video-converter-app
-```
+### Langkah 4: Mulai Konversi
+Setelah Anda memilih video dan mengkonfigurasi pengaturan:
+1. **Klik "Mulai Konversi"** untuk memulai proses
+2. **Lihat Progress** - Anda akan melihat progress bar dan estimasi waktu tersisa
+3. **Tunggu Selesai** - Aplikasi akan memproses semua video Anda secara otomatis
 
-2. Install dependencies:
-```bash
-npm install
-```
-
-## Development
-
-Untuk menjalankan aplikasi dalam mode development:
-
-```bash
-npm run electron:dev
-```
-
-Ini akan:
-1. Memulai Vite dev server di http://localhost:5173
-2. Meluncurkan aplikasi Electron secara otomatis
-3. Mengaktifkan hot module replacement untuk komponen React
-
-## Building
-
-Untuk build aplikasi React:
-```bash
-npm run build
-```
-
-Untuk mengemas aplikasi Electron untuk distribusi:
-```bash
-npm run electron:dist
-```
-
-Ini akan membuat distributable di folder `dist`:
-- **Windows**: Installer `.exe`
-- **macOS**: Paket `.dmg`
-
-## Scripts
-
-- `npm run dev` - Hanya memulai Vite dev server
-- `npm run build` - Build aplikasi React untuk production
-- `npm run preview` - Preview production build
-- `npm run electron` - Menjalankan Electron dengan file yang sudah di-build
-- `npm run electron:dev` - Menjalankan dalam mode development
-- `npm run electron:pack` - Package tanpa building
-- `npm run electron:dist` - Build dan package untuk distribusi
-
-## Struktur Proyek
-
-```
-video-converter-app/
-├── src/                           # Source aplikasi React
-│   ├── components/                # Komponen React
-│   │   ├── FileInput/            # Komponen pemilihan file
-│   │   ├── ConversionSettings/   # Konfigurasi pengaturan
-│   │   ├── ProgressTracking/     # Tampilan progress
-│   │   └── OutputManagement/     # Hasil dan output
-│   ├── hooks/                    # Custom React hooks
-│   ├── utils/                    # Utility functions
-│   ├── styles/                   # Global styles
-│   └── App.jsx                   # Aplikasi utama
-├── electron/                     # Proses utama Electron
-│   ├── main.js                   # Entry proses utama
-│   ├── preload.js               # Script preload
-│   └── services/                # Backend services
-│       ├── VideoProcessor.js    # Wrapper FFmpeg
-│       ├── FileManager.js       # Operasi file
-│       └── SettingsManager.js   # Persistensi pengaturan
-├── build/                       # Konfigurasi build
-├── resources/                   # Resource statis
-└── package.json                 # Konfigurasi proyek
-```
-
-## Cara Penggunaan
-
-1. **Pilih File**: Drag and drop file video atau gunakan file browser
-2. **Konfigurasi Pengaturan**: Pilih resolusi output, kualitas, dan folder tujuan
-3. **Mulai Konversi**: Mulai proses konversi
-4. **Lacak Progress**: Monitor progress real-time untuk setiap file
-5. **Akses Hasil**: Buka folder output atau putar file yang sudah dikonversi
+### Langkah 5: Akses Video yang Telah Dikonversi
+Setelah konversi selesai, Anda dapat:
+- **Buka Folder Output** - Klik untuk melihat semua video yang telah dikonversi
+- **Putar Video** - Klik pada video yang telah dikonversi untuk memutarnya segera
+- **Konversi Lagi** - Tambah video baru dan ulangi prosesnya
 
 ## Format yang Didukung
 
-**Format Input:**
-- MP4, AVI, MOV, MKV, WMV, FLV, WEBM, M4V, 3GP, OGV
+**Video apa yang bisa Anda konversi?**
+- Input: MP4, AVI, MOV, MKV, WMV, FLV, WEBM, M4V, 3GP, OGV
+- Output: MP4 (kompatibel universal)
 
-**Format Output:**
-- MP4 (H.264/AAC)
+## Tips untuk Hasil Terbaik
 
-## Pengaturan Kualitas
+- **Untuk media sosial**: Gunakan kualitas Sedang (3 Mbps) dan resolusi 1080p
+- **Untuk arsip**: Gunakan kualitas Tinggi atau Lossless dengan resolusi asli
+- **Untuk berbagi**: Gunakan kualitas Rendah hingga Sedang untuk mengurangi ukuran file
+- **Untuk perangkat mobile**: Gunakan resolusi 720p untuk pemrosesan lebih cepat
 
-- **Rendah**: 1 Mbps - File lebih kecil, kualitas lebih rendah
-- **Sedang**: 3 Mbps - Kualitas dan ukuran seimbang
-- **Tinggi**: 8 Mbps - Kualitas lebih tinggi, file lebih besar
-- **Lossless**: 50 Mbps - Kualitas maksimum
-- **Kustom**: Bitrate yang ditentukan pengguna (1-50 Mbps)
+## Butuh Bantuan?
 
-## Opsi Resolusi
-
-- **Pertahankan Asli**: Mempertahankan resolusi sumber
-- **720p**: 1280x720 (HD)
-- **1080p**: 1920x1080 (Full HD)
-- **Kustom**: Dimensi yang ditentukan pengguna
-
-## Persyaratan
-
-- **Node.js** 16+ (untuk development)
-- **macOS** 10.15+ atau **Windows** 10+
-- Setidaknya 4GB RAM untuk memproses file video besar
-- Ruang disk yang tersedia untuk file output
-
-## Troubleshooting
-
-### Masalah Umum
-
-1. **FFmpeg tidak ditemukan**: Aplikasi menyertakan binari FFmpeg, tetapi jika Anda mengalami masalah, pastikan aplikasi memiliki izin yang tepat.
-
-2. **Pemrosesan file besar**: Untuk file di atas 4GB, pastikan Anda memiliki ruang disk dan RAM yang cukup.
-
-3. **Konversi gagal**: Periksa bahwa file input tidak rusak dan direktori output memiliki izin tulis.
-
-### Masalah Development
-
-1. **Electron tidak mau mulai**: Pastikan semua dependencies diinstal dengan `npm install`
-
-2. **Hot reload tidak bekerja**: Periksa bahwa Vite dev server berjalan di port 5173
-
-3. **Build gagal**: Hapus node_modules dan install ulang dependencies
-
-## Lisensi
-
-MIT License - lihat file LICENSE untuk detailnya
-
-## Berkontribusi
-
-1. Fork repository
-2. Buat feature branch
-3. Buat perubahan Anda
-4. Test secara menyeluruh
-5. Submit pull request
-
-## Dukungan
-
-Untuk masalah dan permintaan fitur, silakan buat issue di repository.
+Jika Anda mengalami masalah atau memiliki pertanyaan tentang penggunaan SupaVideoConverter, silakan buat issue di repository kami dan kami akan membantu Anda!
