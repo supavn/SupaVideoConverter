@@ -17,7 +17,7 @@ SupaVideoConverter là một ứng dụng desktop thân thiện với người d
 
 - **Dễ sử dụng**: Giao diện kéo thả đơn giản
 - **Hỗ trợ đa định dạng**: Chuyển đổi từ hơn 10 định dạng video sang MP4
-- **Kiểm soát chất lượng**: Chọn từ Thấp, Trung bình, Cao, Lossless hoặc tùy chỉnh
+- **Kiểm soát chất lượng**: Chọn từ Trung bình, Cao, hoặc Tốt nhất
 - **Tùy chọn độ phân giải**: Giữ kích thước gốc hoặc chuyển sang 720p, 1080p, hoặc tùy chỉnh
 - **Xử lý hàng loạt**: Chuyển đổi nhiều video cùng lúc
 - **Theo dõi tiến trình**: Xem tiến trình chuyển đổi thời gian thực
@@ -46,11 +46,9 @@ Làm theo hướng dẫn từng bước đơn giản này để chuyển đổi 
 **Tùy chỉnh đầu ra:** Nhấp vào cài đặt để cấu hình:
 
 **Tùy chọn chất lượng:**
-- **Thấp (1 Mbps)** - Kích thước file nhỏ hơn, chuyển đổi nhanh hơn
-- **Trung bình (3 Mbps)** - Cân bằng chất lượng và kích thước (được khuyên dùng)
-- **Cao (8 Mbps)** - Chất lượng tốt hơn, kích thước file lớn hơn
-- **Lossless (50 Mbps)** - Chất lượng tối đa, kích thước file lớn nhất
-- **Tùy chỉnh** - Đặt bitrate của riêng bạn (1-50 Mbps)
+- **Trung bình** - Cân bằng chất lượng và kích thước file (được khuyên dùng cho hầu hết trường hợp)
+- **Cao** - Chất lượng tốt hơn, kích thước file lớn hơn
+- **Tốt nhất** - Chất lượng tối đa, kích thước file lớn nhất
 
 **Tùy chọn độ phân giải:**
 - **Giữ nguyên** - Duy trì độ phân giải video gốc
@@ -80,9 +78,9 @@ Sau khi chuyển đổi hoàn tất, bạn có thể:
 
 ## Mẹo để có kết quả tốt nhất
 
-- **Cho mạng xã hội**: Sử dụng chất lượng Trung bình (3 Mbps) và độ phân giải 1080p
-- **Cho lưu trữ**: Sử dụng chất lượng Cao hoặc Lossless với độ phân giải gốc
-- **Cho chia sẻ**: Sử dụng chất lượng Thấp đến Trung bình để giảm kích thước file
+- **Cho mạng xã hội**: Sử dụng chất lượng Trung bình và độ phân giải 1080p
+- **Cho lưu trữ**: Sử dụng chất lượng Tốt nhất với độ phân giải gốc
+- **Cho chia sẻ**: Sử dụng chất lượng Trung bình để cân bằng chất lượng và kích thước file
 - **Cho thiết bị di động**: Sử dụng độ phân giải 720p để xử lý nhanh hơn
 
 ## Cần trợ giúp?

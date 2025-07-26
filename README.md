@@ -17,7 +17,7 @@ SupaVideoConverter is a user-friendly desktop application that helps you convert
 
 - **Easy to Use**: Simple drag-and-drop interface
 - **Multi-format Support**: Convert from 10+ video formats to MP4
-- **Quality Control**: Choose from Low, Medium, High, Lossless, or custom quality
+- **Quality Control**: Choose from Medium, High, or Best quality
 - **Resolution Options**: Keep original size or convert to 720p, 1080p, or custom resolution
 - **Batch Processing**: Convert multiple videos at once
 - **Progress Tracking**: See real-time conversion progress
@@ -46,11 +46,9 @@ Follow this simple step-by-step guide to convert your videos:
 **Customize Your Output:** Click on the settings to configure:
 
 **Quality Options:**
-- **Low (1 Mbps)** - Smaller file size, faster conversion
-- **Medium (3 Mbps)** - Balanced quality and size (recommended)
-- **High (8 Mbps)** - Better quality, larger file size
-- **Lossless (50 Mbps)** - Maximum quality, largest file size
-- **Custom** - Set your own bitrate (1-50 Mbps)
+- **Medium** - Balanced quality and file size (recommended for most uses)
+- **High** - Better quality, larger file size
+- **Best** - Maximum quality, largest file size
 
 **Resolution Options:**
 - **Keep Original** - Maintain the source video resolution
@@ -80,9 +78,9 @@ After conversion is complete, you can:
 
 ## Tips for Best Results
 
-- **For social media**: Use Medium quality (3 Mbps) and 1080p resolution
-- **For archiving**: Use High or Lossless quality with original resolution
-- **For sharing**: Use Low to Medium quality to reduce file size
+- **For social media**: Use Medium quality and 1080p resolution
+- **For archiving**: Use Best quality with original resolution
+- **For sharing**: Use Medium quality to balance quality and file size
 - **For mobile devices**: Use 720p resolution for faster processing
 
 ## Need Help?

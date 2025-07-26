@@ -17,7 +17,7 @@ SupaVideoConverter adalah aplikasi desktop yang user-friendly yang membantu Anda
 
 - **Mudah Digunakan**: Interface drag-and-drop yang sederhana
 - **Dukungan Multi-format**: Konversi dari 10+ format video ke MP4
-- **Kontrol Kualitas**: Pilih dari Rendah, Sedang, Tinggi, Lossless, atau kualitas custom
+- **Kontrol Kualitas**: Pilih dari Sedang, Tinggi, atau Terbaik
 - **Opsi Resolusi**: Pertahankan ukuran asli atau konversi ke 720p, 1080p, atau resolusi custom
 - **Pemrosesan Batch**: Konversi beberapa video sekaligus
 - **Pelacakan Progress**: Lihat progress konversi real-time
@@ -46,11 +46,9 @@ Ikuti panduan langkah demi langkah sederhana ini untuk mengkonversi video Anda:
 **Sesuaikan Output Anda:** Klik pada pengaturan untuk mengkonfigurasi:
 
 **Opsi Kualitas:**
-- **Rendah (1 Mbps)** - Ukuran file lebih kecil, konversi lebih cepat
-- **Sedang (3 Mbps)** - Kualitas dan ukuran seimbang (direkomendasikan)
-- **Tinggi (8 Mbps)** - Kualitas lebih baik, ukuran file lebih besar
-- **Lossless (50 Mbps)** - Kualitas maksimum, ukuran file terbesar
-- **Custom** - Atur bitrate Anda sendiri (1-50 Mbps)
+- **Sedang** - Kualitas dan ukuran seimbang (direkomendasikan untuk sebagian besar penggunaan)
+- **Tinggi** - Kualitas lebih baik, ukuran file lebih besar
+- **Terbaik** - Kualitas maksimum, ukuran file terbesar
 
 **Opsi Resolusi:**
 - **Pertahankan Asli** - Pertahankan resolusi video sumber
@@ -80,9 +78,9 @@ Setelah konversi selesai, Anda dapat:
 
 ## Tips untuk Hasil Terbaik
 
-- **Untuk media sosial**: Gunakan kualitas Sedang (3 Mbps) dan resolusi 1080p
-- **Untuk arsip**: Gunakan kualitas Tinggi atau Lossless dengan resolusi asli
-- **Untuk berbagi**: Gunakan kualitas Rendah hingga Sedang untuk mengurangi ukuran file
+- **Untuk media sosial**: Gunakan kualitas Sedang dan resolusi 1080p
+- **Untuk arsip**: Gunakan kualitas Terbaik dengan resolusi asli
+- **Untuk berbagi**: Gunakan kualitas Sedang untuk menyeimbangkan kualitas dan ukuran file
 - **Untuk perangkat mobile**: Gunakan resolusi 720p untuk pemrosesan lebih cepat
 
 ## Butuh Bantuan?
